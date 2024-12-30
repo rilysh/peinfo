@@ -1,0 +1,20 @@
+** peinfo
+Display information about a Windows PE file.
+
+** Usage
+Run =peinfo -h/--help= for help.
+#+begin_src sh
+** usage **
+-----------
+ --dos-header           -- Display DOS header structure.
+ --coff-header          -- Display COFF header structure.
+ --coff-char-fields     -- Display characteristics structure.
+ --sizeof-after         -- Display the sizeof structure.
+ --list-section-tables  -- Display all section tables.
+ --option-header        -- Display optional header structure.
+ --dll-character        -- Display DLL characteristics structure.
+ --dos-stub             -- Display the DOS stub message.
+ --valid-dansid         -- Check whether the PE file has a valid DanS ID.
+ --find-section         -- Find a section with its name.
+ --help                 -- Display this help menu.
+#+end_src

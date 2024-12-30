@@ -1,0 +1,58 @@
+.TH PEINFO 1 19-12-2024 0.1 peinfo
+
+.SH NAME
+.B peinfo
+\- display information about a Windows PE file.
+
+.SH SYNOPSIS
+peinfo [--dos-header <path>]
+       [--coff-header <path>]
+       [--coff-char-fields <path>]
+       [--sizeof-after <path>]
+       [--list-section-tables <path>]
+       [--optional-header <path>]
+       [--dll-character <path>]
+       [--dos-stub <path>]
+       [--valid-dans <path>]
+       [--find-section <path> <section>]
+
+.SH DESCRIPTION
+peinfo is a small tool that retrieves information about a PE \
+(Portable Executable) file. It can also be used on DLL \
+(Dynamic Link Library), as both has similar format structure.
+
+."Options section"
+.B
+.IP --dos-header
+Display DOS header structure.
+.B
+.IP --coff-header
+Display COFF header structure.
+.B
+.IP --coff-char-fields
+Display characteristics structure.
+.B
+.IP --sizeof-after
+Display the sizeof structure.
+.B
+.IP --list-section-tables
+Display all section tables.
+.B
+.IP --option-header
+Display optional header structure.
+.B
+.IP --dll-character
+Display DLL characteristics structure.
+.B
+.IP --dos-stub
+Display the DOS stub message.
+.B
+.IP --valid-dansid
+Check whether the PE file has valid DanS ID or 
+.B
+.IP --find-section
+Find a section with its name.
+
+."Bugs section"
+.SH BUGS
+No, don't report bugs. Why you didn't see this section earlier?
